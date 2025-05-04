@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GOOGLE FORM</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <h1>INTERNSHIP FORM</h1>
+            <form action="" method="get">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" title="Enter 10-digit number" required>
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="5" required></textarea>
+            <label for="company">Company</label>
+            <input type="text" id="company" name="campany" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="">**select option**</option>
+                <option value="HR">HR</option>
+                <option value="Sales">Sales</option>
+                <option value="Development">Development</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Others">Others</option>
+            </select>
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male">Male</label>
+                <label><input type="radio" name="gender" value="Female">Female</label>
+                <label><input type="radio" name="gender" value="Prefer Not to Say">Prefer Not to Say</label>
+            </div>
+            
+                <button type="button">Submit</button>
+
+            </form>
+            
+        </div>
+    </body>
+
+</html>
